@@ -6,7 +6,11 @@
 import scrapy
 
 
-class ScrapingMedexItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class MedicineItem(scrapy.Item):
+    Name = scrapy.Field()
+    Dosage_Form = scrapy.Field()
+    Generic_name = scrapy.Field()
+    Strength = scrapy.Field()
+    Manufactured_by = scrapy.Field()
+    Unit_Price_BDT = scrapy.Field()
+    Indications =  scrapy.Field()
